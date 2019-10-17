@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS DICE APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">🎲 Dice Rolling Application 🎲</h1>
+      </div>  <!--  TOP CONTAINER  -->
+    </div>  <!--  JUMBOTRON  -->
+
+    <div class="theme-switch-wrapper pt-2" style="margin-left: 45%;">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+      </label>
+      <em>Dark Mode!</em>
+    </div>  <!--  THEME SWITCH WRAPPER  -->
+
+    <section id="game-plan">
+      <div class="row">
+
+        <div class="col">
+          <div class="card card-wd-200">
+            <div class="card-header">
+              <h2>Player 1</h2>
+            </div>  <!--  P1 CARD HEADER  -->
+            <div class="card-body">
+              <img id="player1" src="images/dice1.png" alt="Dice number 1">
+            </div>  <!--  P1 CARD BODY  -->
+          </div>  <!--  P1 CARD  -->
+        </div>  <!--  P1 COL  -->
+
+        <div class="col mt-200">
+          <button class="btn btn-lg btn-primary" type="button" onclick="playDice()">🎲 Play !! 🎲</button>
+        </div> <!--  PLAY DICE BUTTON  -->
+
+        <div class="col">
+          <div class="card card-wd-200">
+            <div class="card-header">
+              <h2>Player 2</h2>
+            </div>  <!--  P2 CARD HEADER  -->
+            <div class="card-body">
+              <img id="player2" src="images/dice1.png" alt="Dice number 2">
+            </div>  <!--  P2 CARD BODY  -->
+          </div>  <!--  P2 CARD  -->
+        </div>  <!--  P2 COL  -->
+
+      </div>
+
+      <h1 id="winner" class="pt-4">RESULT</h1>
+
+      <h3>Player 1 wins : <span id="p1WinCount"></span></h3>
+      <h3>Player 2 wins : <span id="p2WinCount"></span></h3>
+      <h3>Draws         : <span id="drawCount"></span></h3>
+
+
+    </section>
+
+    <footer class="text-center pt-3 mb-0">
+      <p>Web design <span class="copyright">&#169;</span> Duncan McEwan, 2019</p>
+    </footer>
+
+    <script type="text/javascript" src="scripts/dice.js"></script>
+    <script type="text/javascript" src="scripts/dm-switch.js"></script>
+
+  </body>
+
+</html>

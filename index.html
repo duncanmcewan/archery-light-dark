@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Archery Advice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-light">
+          <a href="#index.html"><img class="logo" src="images/logo-trans.png" alt="Archery Advice Logo"></a>
+          <div class="navbar-toggler-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>  <!--  NAVBAR TOGGLE  -->
+
+          <div class="theme-switch-wrapper pt-5 pl-5">
+              <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+            </label>
+            <em class="dm-fonts">Dark Mode!</em>
+          </div>  <!--  THEME SWITCH WRAPPER  -->
+
+          <div class="collapse navbar-collapse flex-column" id="navbarToggler">
+            <ul class="nav navbar-nav w-100 justify-content-end pt-20px">
+              <li class="nav-item active">
+                <a class="nav-link" href="#index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>  <!--  TOP NAVBAR LIST  -->
+
+          </div>  <!--  END OF INFO TO TOGGLE ON MOBILE  -->
+        </nav>
+      </div>  <!--  HEADER CONTAINER  -->
+    </header>
+
+    <main class="main-content">
+      <div class="container-fluid p-5">
+        <div class="row align-items-center">
+          <div class="col-10 ml-5 mr-n5">
+            <h1 class="text-center">Archery</h1>
+            <h2 class="text-center">a fun and inclusive sport</h2>
+            <h2 class="text-center">Who can do archery?</h2>
+            <h3 class="text-center">This is a simple one to answer.</h3>
+          </div>  <!--  MAIN BODY TEXT  -->
+          <div class="col-2">
+            <img class="img-responsive" style="height: 100px;width: 140px;" src="images/archery_fun2.png" alt="Comic caveman figure holding a bow and arrow">
+          </div>  <!--  MAIN BODY IMAGE  -->
+        </div>  <!--  MAIN CONTENT TOP ROW  -->
+
+        <div class="yoda-quote-container mt-5">
+          <div class="row align-items-center">
+            <div class="col-8 ml-5 mr-n5">
+              <p class="text-center">ANYONE can do archery.  As the wise one once said ..."</p>
+            </div>  <!--  YODA QUOTE TEXT  -->
+            <div class="col-4">
+              <img style="height: 100px;width: 267px;" src="images/yoda_transp.png" class="img-responsive" alt="Yoda & Do or do not, there is no try quote">
+            </div>  <!--  YODA QUOTE IMAGE  -->
+          </div>  <!--  YODA QUOTE ROW  -->
+        </div>  <!--  YODA QUOTE CONTAINER  -->
+        <hr>
+      </div>  <!--  MAIN CONTENT CONTAINER  -->
+
+      <div class="text-center">
+        <h3>Archery is also about self belief - there is "no try", just do.</h3>
+        <p>Here is a great example of perseverance.  This is a video of the longest recorded accurate shot in archery</p>
+        <p>Pay attention to the archer making the shot.</p>
+        <iframe src="media/MS_World_Record.mp4" class="main-vid" alt="Matt Stutzman Record breaking shot"></iframe>
+      </div>  <!--  MAIN VID  -->
+
+      <hr>
+
+      <div class="text-center">
+        <h3>Need help and advice?</h3>
+        <div class="row">
+          <div class="col-2" style="margin-left: 100px">
+            <img src="images/archery_fun1.jpg" class="bottom_img" height="100px" width="100px" alt="Cartoon figure holding an archery bow jumping in the air">
+          </div>
+          <div class="col-6">
+            <p>There are a lot of resources available to help.  Look at the Resources tab for some videos and podcasts, as well as some useful links.</p>
+            <p class="dice-prompt">For a bit of light entertainment - You can play a Dice game with friends !!</p>
+            <button class="btn btn-lg btn-primary mb-5" type="button" name="button" onclick="loadDice()">🎲 Play Dice 🎲</button>
+          </div>  <!--  RESOURCES BLURB  -->
+        </div>  <!--  RESOURCES ROW  -->
+      </div>  <!--  RESOURCES DIV  -->
+
+    </main>
+
+    <footer class="text-center pt-3 mb-0">
+      <p>Web design <span class="copyright">&#169;</span> Duncan McEwan, 2019</p>
+    </footer>
+
+    <script type="text/javascript" src="scripts/archery.js"></script>
+    <script type="text/javascript" src="scripts/dm-switch.js"></script>
+
+  </body>
+</html>

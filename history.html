@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Archery Advice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-light">
+          <a href="index.html"><img class="logo" src="images/logo-trans.png" alt="Archery Advice Logo"></a>
+          <div class="navbar-toggler-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>  <!--  NAVBAR TOGGLE  -->
+
+          <div class="theme-switch-wrapper pt-5 pl-5">
+              <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+            </label>
+            <em>Dark Mode!</em>
+          </div>  <!--  THEME SWITCH WRAPPER  -->
+
+          <div class="collapse navbar-collapse flex-column" id="navbarToggler">
+            <ul class="nav navbar-nav w-100 justify-content-end pt-20px">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history.html">History<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>  <!--  TOP NAVBAR LIST  -->
+
+          </div>  <!--  END OF INFO TO TOGGLE ON MOBILE  -->
+        </nav>
+      </div>  <!--  HEADER CONTAINER  -->
+    </header>
+
+    <main class=main-content>
+      <div class="container-fluid p-5 text-center">
+        <h1>Landing page for "History" - WIP</h1>
+      </div>    <!--  MAIN CONTENT CONTAINER  -->
+    </main>
+
+    <footer class="text-center pt-3">
+      <p>Web design <span class="copyright">&#169;</span> Duncan McEwan, 2019</p>
+    </footer>
+
+    <script type="text/javascript" src="scripts/archery.js"></script>
+    <script type="text/javascript" src="scripts/dm-switch.js"></script>
+
+  </body>
+</html>
